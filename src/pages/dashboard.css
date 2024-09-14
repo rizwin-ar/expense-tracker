@@ -1,0 +1,14 @@
+.dashboard-wrapper {
+    justify-content: space-between;
+    height: 64px;
+    border-bottom: 1px solid lightgray;
+    padding: 0px 30px;
+    align-items: center;
+    display: flex;
+}
+
+.avatar-username-wrapper {
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}

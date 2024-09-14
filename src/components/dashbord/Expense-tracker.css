@@ -1,0 +1,29 @@
+.expense-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+}
+
+.ant-card-body {
+    border-radius: 8px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    text-align: center;
+    padding: unset !important;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+p {
+    margin: unset;
+}
