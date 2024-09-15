@@ -95,7 +95,6 @@ const SignUpForm: React.FC = () => {
           placeholder="Full Name"
           required
           prefix={<UserOutlined />}
-        //style={{ marginBottom: "10px" }}
         />
         <Input
           style={inputStyles}
@@ -105,7 +104,6 @@ const SignUpForm: React.FC = () => {
           placeholder="Email"
           required
           prefix={<MailOutlined />}
-        //style={{ marginBottom: "10px" }}
         />
         <Input.Password
           style={inputStyles}
@@ -114,7 +112,6 @@ const SignUpForm: React.FC = () => {
           placeholder="Password"
           required
           prefix={<LockOutlined />}
-        //style={{ marginBottom: "10px" }}
         />
         <Input.Password
           style={inputStyles}
@@ -123,7 +120,6 @@ const SignUpForm: React.FC = () => {
           placeholder="Confirm Password"
           required
           prefix={<LockOutlined />}
-        //style={{ marginBottom: "10px" }}
         />
         <Input
           style={inputStyles}

@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+@media only screen and (min-resolution: 120dpi) {
+  .homePage {
+    transform: scale(0.9);
+  }
+}
+
 .cardConatiner {
   width: 690px;
   height: 690px;
@@ -26,7 +32,6 @@
   font-size: 22px;
   color: #0c0b0b;
 }
-
 
 .cardContains {
   width: 500px;
@@ -81,32 +86,3 @@
 .googleText {
   font-size: 14px;
 }
-
-/* @media (min-width: 1200px) {
-  .home {
-    padding: 0 50px;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-} */
-
-/* @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-
-  div {
-    margin: 1rem 0;
-  }
-} */
-
-/* @media (max-width: 340px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-} */

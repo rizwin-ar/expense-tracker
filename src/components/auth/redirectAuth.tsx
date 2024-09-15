@@ -8,7 +8,6 @@ export const useAuthRedirect = () => {
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged((user) => {
             if (user) {
-                // If user is logged in, redirect to dashboard
                 navigate('/dashboard', { replace: true });
             }
         });

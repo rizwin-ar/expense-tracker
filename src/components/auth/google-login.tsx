@@ -12,7 +12,7 @@ const GoogleLogin: React.FC = () => {
   const { dispatch } = useContext(GlobalContext);
   const navigate = useNavigate();
   useAuthRedirect();
-  
+
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);

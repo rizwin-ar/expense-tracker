@@ -15,7 +15,6 @@ const Dashboard = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
 
-  // Ensure user is authenticated
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -44,7 +43,7 @@ const Dashboard = () => {
       okText: 'Log Out',
       cancelText: 'Cancel',
       onOk() {
-        handleLogOut(); // Log out action
+        handleLogOut();
       },
       onCancel() {
         console.log('Cancel');

@@ -12,7 +12,7 @@ const ExpenseTable: React.FC<ExpenseTableProps> = ({ entries }) => {
   const [aiReport, setAIReport] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [filteredEntries, setFilteredEntries] = useState<Entry[]>([]);
-  const [selectedFilter, setSelectedFilter] = useState<'day' | 'week' | 'month'>('month'); // Default filter
+  const [selectedFilter, setSelectedFilter] = useState<'day' | 'week' | 'month'>('month');
 
   useEffect(() => {
     handleFilter(selectedFilter);

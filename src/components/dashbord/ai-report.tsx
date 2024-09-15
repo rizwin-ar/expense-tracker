@@ -2,18 +2,17 @@ import { OpenAI } from "openai";
 import { Entry } from "./AddEntryForm";
 
 const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY || '', // Use environment variable
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY || '',
   dangerouslyAllowBrowser: true
 });
 
 export const generateAIReport = async (entries: Entry[]) => {
   const summary = entries
     .map((entry) => {
-      return `On ${entry.date.format("YYYY-MM-DD")}, ${
-        entry.type === 'income'
+      return `On ${entry.date.format("YYYY-MM-DD")}, ${entry.type === 'income'
           ? `income of ${entry.amount} from ${entry.category}`
           : `expense of ${entry.amount} for ${entry.category}`
-      }`;
+        }`;
     })
     .join(". ");
 

@@ -33,11 +33,10 @@ const AddEntryForm: React.FC<AddEntryFormProps> = ({ onAdd }) => {
       date: values.date,
       type: entryType,
       category: entryType === 'income' ? values.incomeType : values.expenseType,
-      amount: Number(values.amount), // Ensure amount is a number
+      amount: Number(values.amount),
     });
 
     form.resetFields();
-    // setEntryType('income');
   };
 
   return (

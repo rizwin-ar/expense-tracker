@@ -51,7 +51,6 @@ const ExpenseTracker: React.FC<ExpenseTrackerProps> = ({
 
         setEntries(entriesData);
 
-        // Calculate totals
         const totalIncome = entriesData
           .filter((entry) => entry.type === "income")
           .reduce((acc, curr) => acc + (curr.amount ?? 0), 0);
@@ -90,7 +89,6 @@ const ExpenseTracker: React.FC<ExpenseTrackerProps> = ({
       const updatedEntries = [...entries, newEntry];
       setEntries(updatedEntries);
 
-      // Calculate updated totals
       const totalIncome = updatedEntries
         .filter((entry) => entry.type === "income")
         .reduce((acc, curr) => acc + (curr.amount ?? 0), 0);
@@ -103,7 +101,6 @@ const ExpenseTracker: React.FC<ExpenseTrackerProps> = ({
         type: "UPDATE_TOTALS",
         payload: { totalIncome, totalExpense },
       });
-      // setToggle(false);
     } catch (error) {
       console.error("Error adding entry:", error);
     }
@@ -143,7 +140,7 @@ const ExpenseTracker: React.FC<ExpenseTrackerProps> = ({
                   color: currentBalance >= 0 ? "green" : "red",
                 }}
               >
-                ${formattedBalance} {/* Display the formatted balance */}
+                ${formattedBalance}
               </p>
             </Card>
           </Col>
