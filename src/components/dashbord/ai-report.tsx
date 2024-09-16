@@ -2,7 +2,7 @@ import { OpenAI } from "openai";
 import { Entry } from "./AddEntryForm";
 
 const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY || '',
+  apiKey: 'sk-P2_0KE9iVk1VGchg57Th34ZxzfFGtXPiD8WPEtW0KLT3BlbkFJtmV_5KKpOSJYNDrbdQtFpXFyOO5aAUrTBfWocoWdMA',
   dangerouslyAllowBrowser: true
 });
 
